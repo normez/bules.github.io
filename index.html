@@ -12,11 +12,29 @@
   <body>
     <div class="content">
       <p>
-        <b>Bules.com</b><br/>
-        Coming soon.<br/>
+        <b>🚀 Bules.com</b><br>
+        We are an invite-only <b>flexible work platform</b>, intelligently matching businesses with a vetted pool of short-term, seasonal, and temp-to-hire workers.
       </p>
       <p>
-        <a href="privacy.html">Privacy Policy</a>
+        <span id="waitlistLink">
+          <a href="#">Join the Waitlist</a>
+          &bullet;
+          <a href="privacy.html">Privacy Policy</a>
+        </span>
+        <span id="waitlistLinks" style="display: none;">
+          Join the waitlist 
+          <a href="https://ps9odyhcmah.typeform.com/to/InhvG6tO">as a business</a>,
+          or
+          <a href="https://ps9odyhcmah.typeform.com/to/akyttyYA">as a worker</a>.
+        </span>
+      </div>
+      <script>
+        document.getElementById("waitlistLink").addEventListener("click", function(e) {
+          e.preventDefault();
+          document.getElementById("waitlistLinks").style.display = "inline";
+          this.style.display = "none";
+        });
+      </script>
       </p>
     </div>
   </body>
