@@ -9,6 +9,7 @@ body, html {
 
 .content {
     position: fixed;
+    line-height: 24px; /* 4px +12px + 4px */
     bottom: 30px;
     left: 30px;
     right: 30px;
